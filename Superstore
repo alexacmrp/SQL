@@ -1,0 +1,18 @@
+#For this project, I used SQL to query the Superstore database to get information about items sold at the store and their prices. 
+
+#Used a SELECT statement to order the items by price.
+
+SELECT item_name, price
+FROM superstore
+ORDER BY price desc;
+
+#Statistic about the item prices.
+
+SELECT avg(price)
+FROM superstore;
+
+#Statistic about the price for items in the category of "Kitchen Supplies". 
+
+SELECT avg(price)
+FROM superstore
+WHERE category="Kitchen Supplies"
